@@ -9,6 +9,14 @@ cc_test(
     name = "vector_test",
     srcs = ["vector_test.cpp"] + gmain_src,
     deps = [
-        "//src/vector:libvector",
+        "//src:vector",
+    ] + common_deps,
+)
+
+cc_test(
+    name = "map_test",
+    srcs = ["map_test.cpp"] + gmain_src,
+    deps = [
+        "//src:map",
     ] + common_deps,
 )

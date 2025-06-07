@@ -1,11 +1,9 @@
-#include "vector/vector.h"
+#include "vector.h"
 
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
 #include <algorithm>
-
-TEST(VectorTest, VersionTest) { LOG(INFO) << "version=" << mystl::version(); }
 
 TEST(VectorTest, BasicTest) {
   mystl::vector<int> vec1(3);
@@ -51,5 +49,10 @@ TEST(VectorTest, BasicTest) {
   EXPECT_EQ(vec4.size(), 3);
   for (int i = 1; i <= 3; i++) {
     EXPECT_EQ(vec4[i - 1], i);
+  }
+  int v = 1;
+  for (int& i : vec4) {
+    EXPECT_EQ(i, v);
+    v++;
   }
 }

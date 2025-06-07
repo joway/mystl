@@ -6,7 +6,6 @@
 #include <string>
 
 namespace mystl {
-std::string version();
 
 template <typename ValueType>
 class vector {
