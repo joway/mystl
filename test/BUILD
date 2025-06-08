@@ -20,3 +20,19 @@ cc_test(
         "//src:map",
     ] + common_deps,
 )
+
+cc_test(
+    name = "list_test",
+    srcs = ["list_test.cpp"] + gmain_src,
+    deps = [
+        "//src:list",
+    ] + common_deps,
+)
+
+cc_test(
+    name = "stack_test",
+    srcs = ["stack_test.cpp"] + gmain_src,
+    deps = [
+        "//src:stack",
+    ] + common_deps,
+)

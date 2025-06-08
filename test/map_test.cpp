@@ -12,4 +12,8 @@ TEST(MapTest, BasicTest) {
   EXPECT_EQ(map1["c"], 3);
   map1["c"] = -1;
   EXPECT_EQ(map1["c"], -1);
+
+  for (auto it = map1.begin(); it != map1.end(); it++) {
+    LOG(INFO) << "key=" << it->first << " val=" << it->second << std::endl;
+  }
 }

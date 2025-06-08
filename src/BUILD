@@ -14,4 +14,22 @@ cc_library(
     hdrs = ["map.h"],
     include_prefix = ".",
     visibility = ["//visibility:public"],
+    deps = [":list"],
+)
+
+cc_library(
+    name = "list",
+    srcs = [],
+    hdrs = ["list.h"],
+    include_prefix = ".",
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "stack",
+    srcs = [],
+    hdrs = ["stack.h"],
+    include_prefix = ".",
+    visibility = ["//visibility:public"],
+    deps = [":list"],
 )
