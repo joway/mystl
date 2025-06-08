@@ -33,3 +33,11 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [":list"],
 )
+
+cc_library(
+    name = "pointer",
+    srcs = [],
+    hdrs = ["unique_ptr.h"],
+    include_prefix = ".",
+    visibility = ["//visibility:public"],
+)

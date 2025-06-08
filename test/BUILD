@@ -36,3 +36,11 @@ cc_test(
         "//src:stack",
     ] + common_deps,
 )
+
+cc_test(
+    name = "pointer_test",
+    srcs = ["pointer_test.cpp"] + gmain_src,
+    deps = [
+        "//src:pointer",
+    ] + common_deps,
+)
