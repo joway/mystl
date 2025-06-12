@@ -34,6 +34,7 @@ class vector {
 
   void clear();
   void push_back(ValueType v);
+  void pop_back();
 };
 
 template <typename ValueType>
@@ -153,4 +154,8 @@ void vector<ValueType>::push_back(ValueType v) {
   size_++;
 }
 
+template <typename ValueType>
+void vector<ValueType>::pop_back() {
+  size_--;
+}
 }  // namespace mystl

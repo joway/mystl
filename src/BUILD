@@ -41,3 +41,11 @@ cc_library(
     include_prefix = ".",
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "heap",
+    srcs = [],
+    hdrs = ["heap.h"],
+    include_prefix = ".",
+    visibility = ["//visibility:public"],
+)

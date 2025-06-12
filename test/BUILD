@@ -44,3 +44,12 @@ cc_test(
         "//src:pointer",
     ] + common_deps,
 )
+
+cc_test(
+    name = "heap_test",
+    srcs = ["heap_test.cpp"] + gmain_src,
+    deps = [
+        "//src:heap",
+        "//src:vector",
+    ] + common_deps,
+)
